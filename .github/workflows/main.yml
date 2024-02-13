@@ -41,9 +41,9 @@ jobs:
         working-directory: .
               
       - name: CDK bootstrap
-        run: cdk bootstrap 502433561161/us-east-2 --profile aws-cdk
+        run: cdk bootstrap 502433561161/us-east-2
         working-directory: .
 
       - name: CDK Deploy
-        run: cdk deploy --profile aws-cdk --require-approval never
+        run: cdk deploy --require-approval never
         working-directory: .
